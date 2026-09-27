@@ -15,3 +15,7 @@ Built with Next.js 15 (App Router), TypeScript, Tailwind CSS v3 and lucide-react
 npm install
 npm run dev
 ```
+
+## Component map
+
+![Component map](docs/component-map.png)

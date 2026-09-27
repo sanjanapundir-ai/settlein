@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="940" viewBox="0 0 1400 940" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888780"/></marker>
+  </defs>
+  <rect width="1400" height="940" fill="#FFFFFF"/>
+
+  <text x="44" y="58" font-size="26" font-weight="600" fill="#2C2C2A">SettleIn — component map</text>
+  <text x="44" y="84" font-size="14" fill="#5F5E5A">Next.js App Router · one screen · no backend</text>
+
+  <g>
+    <rect x="570" y="110" width="260" height="56" rx="10" fill="#EEEDFE" stroke="#534AB7" stroke-width="1.5"/>
+    <text x="700" y="134" text-anchor="middle" font-size="15" font-weight="600" fill="#3C3489">app/layout.tsx</text>
+    <text x="700" y="154" text-anchor="middle" font-size="12" fill="#534AB7">fonts · &lt;html&gt; · page title</text>
+  </g>
+  <line x1="700" y1="166" x2="700" y2="198" stroke="#888780" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <g>
+    <rect x="490" y="200" width="420" height="76" rx="10" fill="#EEEDFE" stroke="#534AB7" stroke-width="2"/>
+    <text x="700" y="230" text-anchor="middle" font-size="17" font-weight="600" fill="#3C3489">app/page.tsx</text>
+    <text x="700" y="251" text-anchor="middle" font-size="12.5" fill="#534AB7">owns ALL state: requirements · listings · selectedListingIds</text>
+    <text x="700" y="268" text-anchor="middle" font-size="12.5" fill="#534AB7">the only place that reads/writes localStorage</text>
+  </g>
+
+  <g font-size="12" fill="#5F5E5A">
+    <text x="940" y="228">props flow down ↓</text>
+    <text x="940" y="248">onChange / onSave / onDelete flow up ↑</text>
+    <text x="940" y="268">no context, no state library</text>
+  </g>
+
+  <path d="M700 276 V310 M119 310 H1281" stroke="#888780" stroke-width="1.5" fill="none"/>
+  <g stroke="#888780" stroke-width="1.5" marker-end="url(#a)">
+    <line x1="119" y1="310" x2="119" y2="338"/><line x1="285" y1="310" x2="285" y2="338"/>
+    <line x1="451" y1="310" x2="451" y2="338"/><line x1="617" y1="310" x2="617" y2="338"/>
+    <line x1="783" y1="310" x2="783" y2="338"/><line x1="949" y1="310" x2="949" y2="338"/>
+    <line x1="1115" y1="310" x2="1115" y2="338"/><line x1="1281" y1="310" x2="1281" y2="338"/>
+  </g>
+
+  <g font-size="13" font-weight="600" fill="#085041" text-anchor="middle">
+    <rect x="44" y="340" width="150" height="62" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.5"/>
+    <text x="119" y="366">DecorativeBackground</text>
+    <rect x="210" y="340" width="150" height="62" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.5"/>
+    <text x="285" y="366">Header</text>
+    <rect x="376" y="340" width="150" height="62" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.5"/>
+    <text x="451" y="366">SectionDivider</text>
+    <rect x="542" y="340" width="150" height="62" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.5"/>
+    <text x="617" y="366">RequirementsSection</text>
+    <rect x="708" y="340" width="150" height="62" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.5"/>
+    <text x="783" y="366">ListingsToolbar</text>
+    <rect x="874" y="340" width="150" height="62" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.5"/>
+    <text x="949" y="366">ListingForm</text>
+    <rect x="1040" y="340" width="150" height="62" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.5"/>
+    <text x="1115" y="366">ComparisonView</text>
+    <rect x="1206" y="340" width="150" height="62" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.5"/>
+    <text x="1281" y="366">EmptyState</text>
+  </g>
+  <g font-size="11" fill="#0F6E56" text-anchor="middle">
+    <text x="119" y="386">floating pastel blobs</text>
+    <text x="285" y="386">title + 3 avatars</text>
+    <text x="451" y="386">dotted rule</text>
+    <text x="617" y="386">Load example + cards</text>
+    <text x="783" y="386">add · examples · clear</text>
+    <text x="949" y="386">add / edit · photos</text>
+    <text x="1115" y="386">groups · compare · copy</text>
+    <text x="1281" y="386">"No flats yet!"</text>
+  </g>
+
+  <line x1="617" y1="402" x2="617" y2="458" stroke="#888780" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="625" y="436" font-size="11" fill="#5F5E5A">× 3 people</text>
+  <line x1="1115" y1="402" x2="1115" y2="458" stroke="#888780" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="1123" y="436" font-size="11" fill="#5F5E5A">one per flat</text>
+
+  <g text-anchor="middle">
+    <rect x="512" y="460" width="210" height="62" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.5"/>
+    <text x="617" y="486" font-size="13" font-weight="600" fill="#085041">PersonRequirementCard</text>
+    <text x="617" y="506" font-size="11" fill="#0F6E56">rent · areas · toggles · commutes</text>
+    <rect x="1010" y="460" width="210" height="62" rx="10" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.5"/>
+    <text x="1115" y="486" font-size="13" font-weight="600" fill="#085041">ListingCard</text>
+    <text x="1115" y="506" font-size="11" fill="#0F6E56">photos · lightbox · 3 columns</text>
+  </g>
+  <text x="1236" y="486" font-size="11" fill="#5F5E5A">also rendered in</text>
+  <text x="1236" y="502" font-size="11" fill="#5F5E5A">"Side by side"</text>
+
+  <g stroke="#888780" stroke-width="1.5" marker-end="url(#a)">
+    <line x1="285" y1="402" x2="285" y2="578"/>
+    <line x1="617" y1="522" x2="617" y2="578"/>
+    <line x1="1115" y1="522" x2="1115" y2="578"/>
+  </g>
+  <rect x="210" y="580" width="980" height="46" rx="10" fill="#FAECE7" stroke="#993C1D" stroke-width="1.5"/>
+  <text x="700" y="608" text-anchor="middle" font-size="13" fill="#712B13"><tspan font-weight="600">Avatar</tspan>  ·  shared leaf — DiceBear image, falls back to a pastel circle + initial</text>
+
+  <rect x="30" y="662" width="1340" height="170" rx="14" fill="none" stroke="#B4B2A9" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="50" y="690" font-size="14" font-weight="600" fill="#444441">lib/  —  pure logic, no UI (imported by the components above)</text>
+  <g text-anchor="middle">
+    <rect x="44" y="708" width="172" height="104" rx="10" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.2"/>
+    <text x="130" y="734" font-size="13" font-weight="600" fill="#444441">types.ts</text>
+    <text x="130" y="756" font-size="11" fill="#5F5E5A">Listing, PersonRequirements,</text>
+    <text x="130" y="772" font-size="11" fill="#5F5E5A">RequirementItem, AppState</text>
+    <rect x="234" y="708" width="172" height="104" rx="10" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.2"/>
+    <text x="320" y="734" font-size="13" font-weight="600" fill="#444441">constants.ts</text>
+    <text x="320" y="756" font-size="11" fill="#5F5E5A">PEOPLE, COLOR_STYLES,</text>
+    <text x="320" y="772" font-size="11" fill="#5F5E5A">AREA_OPTIONS, labels</text>
+    <text x="320" y="796" font-size="11" fill="#888780">used everywhere</text>
+    <rect x="424" y="708" width="172" height="104" rx="10" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.2"/>
+    <text x="510" y="734" font-size="13" font-weight="600" fill="#444441">storage.ts</text>
+    <text x="510" y="756" font-size="11" fill="#5F5E5A">safeLoad / safeSave /</text>
+    <text x="510" y="772" font-size="11" fill="#5F5E5A">safeClear (try/catch)</text>
+    <text x="510" y="796" font-size="11" fill="#888780">← page</text>
+    <rect x="614" y="708" width="172" height="104" rx="10" fill="#EEEDFE" stroke="#534AB7" stroke-width="1.5"/>
+    <text x="700" y="734" font-size="13" font-weight="600" fill="#3C3489">matching.ts</text>
+    <text x="700" y="756" font-size="11" fill="#534AB7">rent share, met / unmet,</text>
+    <text x="700" y="772" font-size="11" fill="#534AB7">plain-English misses</text>
+    <text x="700" y="796" font-size="11" fill="#534AB7">← Comparison, Card, Form</text>
+    <rect x="804" y="708" width="172" height="104" rx="10" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.2"/>
+    <text x="890" y="734" font-size="13" font-weight="600" fill="#444441">summary.ts</text>
+    <text x="890" y="756" font-size="11" fill="#5F5E5A">"Copy summary" text</text>
+    <text x="890" y="772" font-size="11" fill="#5F5E5A">(reuses matching)</text>
+    <text x="890" y="796" font-size="11" fill="#888780">← ComparisonView</text>
+    <rect x="994" y="708" width="172" height="104" rx="10" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.2"/>
+    <text x="1080" y="734" font-size="13" font-weight="600" fill="#444441">image.ts</text>
+    <text x="1080" y="756" font-size="11" fill="#5F5E5A">downscale to 1000px,</text>
+    <text x="1080" y="772" font-size="11" fill="#5F5E5A">JPEG @ 0.7</text>
+    <text x="1080" y="796" font-size="11" fill="#888780">← ListingForm</text>
+    <rect x="1184" y="708" width="172" height="104" rx="10" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.2"/>
+    <text x="1270" y="734" font-size="13" font-weight="600" fill="#444441">exampleData.ts</text>
+    <text x="1270" y="756" font-size="11" fill="#5F5E5A">demo people</text>
+    <text x="1270" y="772" font-size="11" fill="#5F5E5A">+ 4 demo flats</text>
+    <text x="1270" y="796" font-size="11" fill="#888780">← page</text>
+  </g>
+
+  <g font-size="12" fill="#444441">
+    <rect x="44" y="866" width="16" height="16" rx="4" fill="#EEEDFE" stroke="#534AB7"/><text x="68" y="879">app shell / core logic</text>
+    <rect x="240" y="866" width="16" height="16" rx="4" fill="#E1F5EE" stroke="#0F6E56"/><text x="264" y="879">UI components (dumb, controlled)</text>
+    <rect x="490" y="866" width="16" height="16" rx="4" fill="#FAECE7" stroke="#993C1D"/><text x="514" y="879">shared leaf</text>
+    <rect x="620" y="866" width="16" height="16" rx="4" fill="#F1EFE8" stroke="#5F5E5A"/><text x="644" y="879">helpers</text>
+    <line x1="730" y1="874" x2="770" y2="874" stroke="#888780" stroke-width="1.5" marker-end="url(#a)"/><text x="780" y="879">renders</text>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { background: #FFF8EE; }
+body { background: #FFF8EE; color: #3B3452; -webkit-tap-highlight-color: transparent; }
+
+@layer components {
+  .card-lift { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .card-lift:hover { transform: translateY(-3px); }
+  .field {
+    @apply w-full rounded-2xl border-2 border-violet-100 bg-white px-3 py-2.5 text-base text-ink outline-none transition focus:border-violet-300 focus:ring-4 focus:ring-violet-100;
+  }
+  .label { @apply mb-1 block text-sm font-bold text-ink/80; }
+  .btn {
+    @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full px-4 py-2 text-sm font-bold transition active:scale-95 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary { @apply btn bg-violet-500 text-white shadow-fluffy hover:bg-violet-600; }
+  .btn-soft { @apply btn bg-white text-ink ring-2 ring-violet-100 hover:ring-violet-200; }
+  .btn-danger { @apply btn bg-rose-500 text-white hover:bg-rose-600; }
+  .wavy-divider {
+    height: 12px;
+    background-image: radial-gradient(circle, #C4B5FD 2px, transparent 2.5px);
+    background-size: 18px 12px;
+    background-position: center;
+    background-repeat: repeat-x;
+    opacity: 0.8;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .card-lift:hover { transform: none; }
+}
